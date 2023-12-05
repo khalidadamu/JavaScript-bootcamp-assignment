@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <h1>Working with Objects</h1>
+</body>
+
+<script>
+     const user = {
+          Name:'Khalid'
+     }
+
+     const order = {
+          itemName: 'Pizza', 
+          quantity: 1,
+          deliveryType: 'Pick'
+     }
+
+     const updatedUser = {
+          ...order,
+          'gender': 'male'
+     }
+     console.log(updatedUser);
+
+     const address = 'Adekoya Street Ogba ikeja Lagos'
+     const lastestUpdate = {...updatedUser, address};
+
+     console.log(lastestUpdate)
+
+
+     //invalid dot property indentifiers
+     const oddObject = {
+          "prop-3": "Three",
+          "3": 'three'
+     }
+
+     console.log(oddObject.prop-3);
+</script>
+</html>
