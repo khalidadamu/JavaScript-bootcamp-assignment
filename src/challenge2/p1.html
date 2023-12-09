@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Guess</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="html, css, html tables, table">
+    <meta name="Description" content="html table">
+    <!-- add icon -->
+   
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<!-- INSTRUCTION: edit the code below such that the invoked -->
+<!-- function runs a match check on user entered number and the
+     randomly generated number -->
+
+<body>
+    <form onsubmit="event.preventDefault();">
+    <label for="guess">Guess a number</label>
+    <br />
+    <input type="number" id="guess" name="guess" min="0" max="10" step="1" maxlength="1" required >
+    <p>Click the button below to try your luch!!</p>
+    <button onclick="checkGuess()">Check</button>
+    </form>
+    <script>
+        // Generate a random integer between 1 and 10 (inclusive)
+        const num = Math.ceil(Math.random() * 10);
+        // Log the generated random number to the console
+        <!-- console.log(num); -->
+        
+        
+        function checkGuess() {
+
+            
+            // Prompt the user to guess a number between 1 and 10 (inclusive)
+            const userInput = document.getElementById("guess").value;
+            // Check if the guessed number matches the generated random number
+            if(num == userInput) {
+                console.log('Matched');
+            }else {
+                console.log('Not matched, the number was ' + num); 
+            }
+            
+           
+            // Log a message if the guessed number matches the random number
+            //else
+
+            // Log a message if the guessed number does not match, and also provide the correct number
+
+           } 
+
+
+    </script>
+</body>
+
+</html>
