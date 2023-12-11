@@ -57,7 +57,6 @@ input {
 /* Show red borders when filled, but invalid */
 input:not(:placeholder-shown) {
     border-color: hsl(0, 76%, 50%);
-    ;
 }
 
 /* Show green borders when valid */

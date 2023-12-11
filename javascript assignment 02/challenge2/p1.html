@@ -40,10 +40,11 @@
             // Prompt the user to guess a number between 1 and 10 (inclusive)
             const userInput = document.getElementById("guess").value;
             // Check if the guessed number matches the generated random number
+            event.preventDefault();
            if(num === userInput) {
             console.log("Matched")
            }else {
-            console.log("Not the correct number" + num)
+            console.log("Not the correct number" +" "+ num)
            }
            
             // Log a message if the guessed number matches the random number
