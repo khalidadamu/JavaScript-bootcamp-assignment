@@ -1,1 +1,1 @@
-# JavaScript-bootcamp-assignment
+# JavaScript-assignment
