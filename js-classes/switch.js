@@ -61,7 +61,7 @@
 
 // Asignment
 // Write a script to welcome yout guset to your vent based on thier type of ticket
-const ticket = "Regular";
+const ticket = "regular";
 
 switch (ticket) {
   case "regular":
@@ -80,14 +80,3 @@ switch (ticket) {
     console.log(`You have unknown ticket`);
 }
 
-// While Loops
-
-// while (true) {
-//      statement
-// }
-
-let x = 0;
-while (x < 10) {
-  x++;
-  console.log(x);
-}
