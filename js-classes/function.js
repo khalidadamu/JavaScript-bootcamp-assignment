@@ -93,7 +93,7 @@ for (const number of myGenerator) {
 }
 
 
-
+// divine
 
 function swapLetter(text) {
   let x = text.split("");
