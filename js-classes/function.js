@@ -3,6 +3,8 @@
 //   return result;
 // }
 
+const { time } = require("console");
+
 // const mutilply1 = mutilplyNumber(5, 5);
 // console.log(mutilply1);
 
@@ -92,7 +94,6 @@ for (const number of myGenerator) {
   console.log(number);
 }
 
-
 // divine
 
 function swapLetter(text) {
@@ -140,3 +141,48 @@ function caseChanger(charInput) {
 }
 
 console.log(caseChanger("loWER"));
+
+//Write a script that will loop over an array and count all the elements of that array.
+function countArray(array) {
+  let num_cycles = 0;
+  for (let i = 0; i < array.length; i++) {
+    num_cycles += 1;
+    console.log(num_cycles);
+  }
+  return;
+}
+
+const arr1 = countArray(["red", "lilac", "indigo", "blue", "ruby"]);
+console.log(arr1);
+
+//write a script that print daily train schedules for tuesday and wednesday such that the time to train arrival depends on when passange gets to the station
+
+// const time = 12;
+// // const wednesday = 5;
+
+// switch ("tuesday") {
+//   case "tuesday":
+//     console.log(`Your train will arive at your destination att ${tuesday}`)
+//     break;
+//   case "wednesday":
+//     console.log(`Your train will arive at your destination att ${dailySchedule.wednesday}`)
+//     break;
+//   default:
+//     console.log(`Your train will will nott arrive today ooh better look for alternative`);
+// }
+
+// const currsssentTime = new Date();
+// console.log(currsssentTime.getHours());
+
+const trainSchedule = () => {
+  const curretnTime = new Date();
+  const curentCurentTime = curretnTime.getDate();
+
+  if (curretnTime === curentCurentTime) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+};
+
+trainSchedule();
